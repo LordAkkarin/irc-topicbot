@@ -128,6 +128,9 @@ schedule.scheduleJob (schedulerRule, function () {
 client.on ('message#', function (nick, to, text, message) {
 	// split message
 	var messageEx = text.split (' ');
+	
+	// skip further execution
+	if (!_.contains (['?topic', '?sync', '?join', '?part'], messageEx[0])) return;
 
 	// operator only as of this point
 	if (!_.contains (ops[to.toLowerCase()], nick.toLowerCase())) {
