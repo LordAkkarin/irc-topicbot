@@ -1,0 +1,22 @@
+{
+	"name":			"irc-topicbot",
+	"description":		"Provides a simple IRC bot for managing topics.",
+	"version":		"0.1.0",
+
+	"license":		"Apache 2.0",
+	"author":		{
+		"name":			"Johannes Donath",
+		"email":		"johannesd@evil-co.com",
+		"url":			"http://www.evil-co.org"
+	},
+
+	"bin":			{
+		"irc-topicbot":		"./bot.js"
+	},
+
+	"dependencies":		{
+		"irc":			"~0.3.7",
+		"node-schedule":	"~0.1.13",
+		"underscore":		"~1.7.0"
+	}
+}
