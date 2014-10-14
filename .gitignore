@@ -1,0 +1,15 @@
+############
+# IntelliJ #
+############
+.idea/
+
+#######
+# NPM #
+#######
+node_modules/
+
+#######
+# Bot #
+#######
+channel/
+config.js
